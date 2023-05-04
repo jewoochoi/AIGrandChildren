@@ -1,5 +1,6 @@
 package com.example.aigrandchildren.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,7 @@ class MessageAdapter(messageList: List<Message>) :
         this.messageList = messageList
     }
 
+    @SuppressLint("InflateParams")
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
